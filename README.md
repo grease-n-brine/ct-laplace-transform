@@ -12,13 +12,6 @@ $$F(s) = \int_{0^-}^{\infty} f(t)e^{-st} dt$$
 
 The variable $s = \sigma + j\omega$ represents a complex frequency parameter, where $\sigma$ dictates exponential scaling and $\omega$ dictates sinusoidal oscillation. The lower limit of integration, denoted as $0^-$, accommodates initial conditions and impulse distributions occurring at the origin.
 
-### Operational Properties
-The primary utility of the Laplace transform lies in its handling of differential operators. Differentiation in the time domain corresponds to algebraic multiplication in the frequency domain:
-
-$$\mathcal{L}\left\{\frac{df(t)}{dt}\right\} = sF(s) - f(0^-)$$
-
-Assuming zero initial conditions ($f(0^-) = 0$), the operation simplifies to multiplication by $s$. Conversely, integration in the time domain corresponds to division by $s$. Consequently, linear differential equations reduce to algebraic equations solvable via standard algebraic manipulation.
-
 ## Transfer Functions and System Stability
 In control theory, linear time-invariant (LTI) systems are characterized by their transfer function $H(s)$, defined as the ratio of the Laplace transform of the output $Y(s)$ to the input $U(s)$ under zero initial conditions:
 
